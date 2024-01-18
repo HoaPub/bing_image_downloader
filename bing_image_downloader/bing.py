@@ -49,6 +49,8 @@ class Bing:
                 return "+filterui:photo-animatedgif"
             elif shorthand == "transparent":
                 return "+filterui:photo-transparent"
+            elif "filter" in shorthand:
+                return shorthand
             else:
                 return ""
 
